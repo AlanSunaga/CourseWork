@@ -38,7 +38,7 @@ public class Main {
         EmployeeBook.checkIfThereIsADepartment();
 
 //        Обнулил счетчик
-        Employee.getIdNull(EmployeeBook.EMPLOYEES);
+        Employee.zeroingId(EmployeeBook.EMPLOYEES);
 
 //        Сгенерировал новый массив состоящий только из сотрудников которые из одного отдела
         EmployeeBook.initEmloyeesnew();

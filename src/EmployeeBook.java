@@ -102,7 +102,7 @@ public class EmployeeBook {
         otdel = randomOtdel();
 
         for (int i = 0; i < EMPLOYEES.length; i++) {
-            if (otdel == EMPLOYEES[i].getOtdel()) {
+            if (otdel == EMPLOYEES[i].getDepartment()) {
                 cout++;
             }
         }
@@ -124,7 +124,7 @@ public class EmployeeBook {
         int count = 0;
         EMPLOYEESNEW = new Employee[size];
         for (int i = 0; i < EMPLOYEES.length; i++) {
-            if (otdel == EMPLOYEES[i].getOtdel()) {
+            if (otdel == EMPLOYEES[i].getDepartment()) {
                 EMPLOYEESNEW[count] = new Employee(EMPLOYEES[i].getFullName(), otdel, EMPLOYEES[i].getSalary());
                 count++;
             }
